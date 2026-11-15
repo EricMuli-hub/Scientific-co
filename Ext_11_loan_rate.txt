@@ -1,0 +1,4 @@
+Newton  monthly rate = 1.306793%, iterations = 5, nominal annual = 15.6815%, effective annual = 16.8592%
+Secant  monthly rate = 1.306793%, iterations = 7, nominal annual = 15.6815%, effective annual = 16.8592%
+Total repaid: 630000.0  Total interest: 130000.0
+Residual f(r): -1.1059455573558807e-09

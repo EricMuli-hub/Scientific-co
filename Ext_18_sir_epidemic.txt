@@ -1,0 +1,5 @@
+Basic reproduction number R0 = beta/gamma = 2.9999999999999996
+Peak infections: 300.8 people on day 38.5
+Final recovered (total ever infected): 940.5 of 1000
+Conservation check max |S+I+R-N| = 4.55e-13
+With beta=0.15 (distancing): peak 63.7 on day 114.0

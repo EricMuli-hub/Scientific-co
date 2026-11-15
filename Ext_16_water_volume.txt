@@ -1,0 +1,4 @@
+Trapezoidal volume: 34.600 m3
+Simpson volume    : 35.133 m3
+Difference        : 0.533 m3
+Average flow rate : 4.325 m3/h; litres pumped = 35,133

@@ -1,0 +1,3 @@
+First three USD totals: [344.43 494.2  427.32]
+Total value (USD): 275,472,577.36
+Loop 0.1303s, vectorized 0.00204s, speed-up 64x

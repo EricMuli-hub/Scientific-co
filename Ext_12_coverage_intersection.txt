@@ -1,0 +1,6 @@
+guess=[2, 1]: solution=[2.62659 1.44949] converged=True residual=[-0. -0.]
+guess=[-2, 1]: solution=[-2.62659  1.44949] converged=True residual=[-0. -0.]
+guess=[2, -3]: solution=[ 1.50000e-04 -2.97267e+00] converged=False residual=[-0.16323224 -0.97267015]
+guess=[0.5, 3]: solution=[-2.62659  1.44949] converged=True residual=[-0. -0.]
+Roots for y from the polynomial y^2+2y-5=0: [-3.44949  1.44949]
+Only y >= -2 is valid on the parabola; x = +/- 2.62659

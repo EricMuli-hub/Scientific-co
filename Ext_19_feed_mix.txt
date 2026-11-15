@@ -1,0 +1,3 @@
+SLSQP : Feed A=14.286 kg, Feed B=2.857 kg, cost=557.14 KES, success=True
+linprog: Feed A=14.286 kg, Feed B=2.857 kg, cost=557.14 KES
+Protein supplied: 4.000 kg; energy supplied: 50.000 MJ

@@ -1,0 +1,4 @@
+Mean 5.75 C, min 3.8 C, max 9.1 C
+Kelvin (first 3): [277.35 277.15 276.95]
+Hours outside 2-8 C: 4 at hours [10, 11, 12, 13]
+Share of day out of range: 16.7%

@@ -1,0 +1,4 @@
+Fitted model: count = 100.38 * exp(0.3962 t)
+Parameter standard errors: [0.4992 0.0009]
+RMSE: 1.32 colonies; doubling time = 1.750 h
+Prediction at 8 h: 2388

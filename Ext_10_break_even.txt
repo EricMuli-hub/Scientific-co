@@ -1,0 +1,4 @@
+Lower break-even (bisection): 68.2179 units (36 iterations)
+Upper break-even (bisection): 2931.7821 units
+Lower break-even (fixed point): 68.2179 units (9 iterations)
+Maximum profit near q = 1500: 20500.00

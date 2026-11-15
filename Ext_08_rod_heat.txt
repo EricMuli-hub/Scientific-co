@@ -1,0 +1,3 @@
+Jacobi iterations: 481  Gauss-Seidel iterations: 244
+Gauss-Seidel temperatures: [75.455 70.909 66.364 61.818 57.273 52.727 48.182 43.636 39.091 34.545]
+Max difference from direct solve: 1.1526017118512755e-07

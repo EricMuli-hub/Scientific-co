@@ -1,0 +1,4 @@
+Mean duration: 31.33 days, std: 3.70 days
+Probability of finishing after 30 days: 61.5450% (standard error 0.1088%)
+95% interval for p: 61.3318% to 61.7582%
+90th percentile duration: 36.33 days

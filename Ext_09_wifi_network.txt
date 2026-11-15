@@ -1,0 +1,8 @@
+Dominant eigenvalue: 2.3429
+Switch   0.2991
+Router   0.2228
+Lab1     0.2228
+Lab2     0.1277
+Printer  0.1277
+Degree of each node: [2, 4, 2, 1, 1]
+Verification error: 3.0282846668030173e-15

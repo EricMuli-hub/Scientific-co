@@ -1,0 +1,10 @@
+Combined matrix:
+ [[ 0.  -0.5  4. ]
+ [ 0.5  0.   2. ]
+ [ 0.   0.   1. ]]
+Transformed vertices:
+ [[4.  2. ]
+ [4.  4. ]
+ [2.5 3. ]]
+Area before: 6.0
+Area after : 1.4999999999999998

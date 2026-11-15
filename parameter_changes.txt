@@ -1,0 +1,157 @@
+
+======================================================================
+TASK 2: add 3 C to every reading (hot day)
+======================================================================
+baseline  mean=23.12 min=17.50 max=29.40 first F reading=65.30
++3 C      mean=26.12 min=20.50 max=32.40 first F reading=70.70
+
+======================================================================
+TASK 3: change number of measurements
+======================================================================
+N=  100,000  loop=0.0103s  vectorized=0.00014s  speed-up=74.3x
+N=1,000,000  loop=0.1069s  vectorized=0.00164s  speed-up=65.1x
+N=3,000,000  loop=0.3287s  vectorized=0.00428s  speed-up=76.9x
+
+======================================================================
+TASK 4: change the approximation and the size of x
+======================================================================
+approx=1.414      absolute error=2.136e-04 relative error=0.015101%
+approx=1.4142     absolute error=1.356e-05 relative error=0.000959%
+approx=1.41421356 absolute error=2.373e-09 relative error=0.000000%
+x=1e-12: direct=0.500044 stable=0.500000
+x=1e-14: direct=0.488498 stable=0.500000
+x=1e-16: direct=0.000000 stable=0.500000
+
+======================================================================
+TASK 5: change rotation angle and scale factors
+======================================================================
+angle=45 deg, scale=(2.0,1.5) det=3.0000
+[[ 0.      0.    ]
+ [ 1.4142  1.4142]
+ [ 0.3536  2.4749]
+ [-1.0607  1.0607]]
+angle=90 deg, scale=(3.0,3.0) det=9.0000
+[[ 0.  0.]
+ [ 0.  3.]
+ [-3.  3.]
+ [-3.  0.]]
+angle=30 deg, scale=(1.0,1.0) det=1.0000
+[[ 0.     0.   ]
+ [ 0.866  0.5  ]
+ [ 0.366  1.366]
+ [-0.5    0.866]]
+
+======================================================================
+TASK 6: change observed totals; then make the servers identical in ratio
+======================================================================
+totals [20. 72.] -> Type A, Type B = [3. 4.]
+totals [26. 76.] -> Type A, Type B = [5. 3.]
+det of singular matrix: 0.0
+np.linalg.solve raised LinAlgError: Singular matrix
+
+======================================================================
+TASK 7: strengthen the coupling between unknowns (condition number)
+======================================================================
+coupling=-1.0: solution=[5. 5. 5.] cond(A)=2.39
+coupling=-1.9: solution=[ 9.6326 12.3845 11.1769] cond(A)=6.51
+
+======================================================================
+TASK 8: change right boundary and tolerance
+======================================================================
+right= 20.0, tol=1e-08: Jacobi 150 it, Gauss-Seidel 75 it, temperatures=[86.667 73.333 60.    46.667 33.333]
+right= 80.0, tol=1e-08: Jacobi 152 it, Gauss-Seidel 77 it, temperatures=[96.667 93.333 90.    86.667 83.333]
+right= 20.0, tol=1e-03: Jacobi 70 it, Gauss-Seidel 35 it, temperatures=[86.665 73.33  59.997 46.665 33.332]
+right= 20.0, tol=1e-12: Jacobi 214 it, Gauss-Seidel 107 it, temperatures=[86.667 73.333 60.    46.667 33.333]
+
+======================================================================
+TASK 9: add a link between nodes A and D
+======================================================================
+baseline   dominant eigenvalue=2.5616 importance=[0.2192 0.2808 0.2808 0.2192]
+A-D linked dominant eigenvalue=3.0000 importance=[0.25 0.25 0.25 0.25]
+
+======================================================================
+TASK 10: change amplitude and tolerance of the heat-balance model
+======================================================================
+amp=10, tol=1e-10: bisection root=27.525211 (39 it), fixed-point=27.525211 (13 it)
+amp=10, tol=1e-03: bisection root=27.525024 (16 it), fixed-point=27.525136 (5 it)
+amp=30, tol=1e-10: bisection root=31.279175 (39 it), fixed-point=31.279175 (22 it)
+
+======================================================================
+TASK 11: change the last cash inflow and the starting guess
+======================================================================
+cash flows [-10000, 3000, 3500, 4000, 2500]: IRR Newton=11.5425% (4 it), Secant=11.5425% (7 it)
+cash flows [-10000, 3000, 3500, 4000, 4500]: IRR Newton=17.0937% (5 it), Secant=17.0937% (6 it)
+Newton start x0=0.1: root=11.542461% in 4 iterations
+Newton start x0=0.5: root=11.542461% in 8 iterations
+Newton start x0=0.9: root=-154.411050% in 12 iterations
+
+======================================================================
+TASK 12: change radius and the initial guesses
+======================================================================
+radius=2.0, guess=[1, 1]: solution=[1.51749 1.30278], converged=True
+radius=2.0, guess=[-1, 1]: solution=[-1.51749  1.30278], converged=True
+radius=2.0, guess=[0, -2]: solution=[ 0. -2.], converged=False
+radius=2.0, guess=[2, -2]: solution=[-5.20000e-04 -1.93846e+00], converged=False
+radius=3.0, guess=[1, 1]: solution=[1.83638 2.37228], converged=True
+radius=3.0, guess=[-1, 1]: solution=[-1.83638  2.37228], converged=True
+radius=3.0, guess=[0, -2]: solution=[ 0. -2.], converged=False
+radius=3.0, guess=[2, -2]: solution=[ 1.39000e-03 -2.94454e+00], converged=False
+
+======================================================================
+TASK 13: replace the 10:00 reading with an outlier (22.5 -> 26.0)
+======================================================================
+baseline  linear(10:30)=23.25  cubic(10:30)=23.36  linear(9:30)=21.25  cubic(9:30)=21.32
+outlier   linear(10:30)=25.00  cubic(10:30)=25.39  linear(9:30)=23.00  cubic(9:30)=23.70
+
+======================================================================
+TASK 14: change the model degree
+======================================================================
+degree 1: RMSE=18.83 ms, prediction at 400 users=312.9 ms
+degree 2: RMSE=1.55 ms, prediction at 400 users=377.9 ms
+degree 3: RMSE=0.14 ms, prediction at 400 users=387.9 ms
+
+======================================================================
+TASK 15: change step size h on f(x)=x^3 at x=2 (true derivative = 12)
+======================================================================
+h=1.0   : forward=19.000000 (error 7.00e+00)  central=13.000000 (error 1.00e+00)
+h=0.1   : forward=12.610000 (error 6.10e-01)  central=12.010000 (error 1.00e-02)
+h=0.01  : forward=12.060100 (error 6.01e-02)  central=12.000100 (error 1.00e-04)
+h=0.001 : forward=12.006001 (error 6.00e-03)  central=12.000001 (error 1.00e-06)
+GPS data using every 2nd sample (dt=2 s) at t=2: 5.675 m/s  versus dt=1 s: 5.65 m/s
+
+======================================================================
+TASK 16: change the peak reading (1.8 -> 3.0 kW)
+======================================================================
+baseline  trapezoid=15.700 kWh  simpson=15.800 kWh
+peak 3.0  trapezoid=18.100 kWh  simpson=19.000 kWh
+
+======================================================================
+TASK 17: change step size h and rate constant k
+======================================================================
+k=0.12, h=1.0: Euler=26.404 exact=26.776 error=0.3720
+k=0.12, h=0.1: Euler=26.738 exact=26.776 error=0.0383
+k=0.12, h=5.0: Euler=25.266 exact=26.776 error=1.5098
+k=0.4, h=1.0: Euler=25.000 exact=25.000 error=0.0004
+k=0.4, h=5.0: Euler=90.000 exact=25.000 error=64.9996
+
+======================================================================
+TASK 18: change R and C (time constant tau = R*C)
+======================================================================
+R=1000, C=0.001: tau=1.0 s, V(5 s)=4.9663 V, reaches 63% of 5 V at about 1.01 s
+R=2000, C=0.001: tau=2.0 s, V(5 s)=4.5896 V, reaches 63% of 5 V at about 2.01 s
+R=1000, C=0.0005: tau=0.5 s, V(5 s)=4.9998 V, reaches 63% of 5 V at about 0.50 s
+
+======================================================================
+TASK 19: change cost of Type B and the capacity requirement
+======================================================================
+costA=12, costB=18, need=1000: A=0.000, B=5.882, cost=105.88; integer best (cost,A,B,capacity)=(108, 0, 6, 1020)
+costA=12, costB=25, need=1000: A=10.000, B=0.000, cost=120.00; integer best (cost,A,B,capacity)=(120, 10, 0, 1000)
+costA=12, costB=18, need=1500: A=0.000, B=8.824, cost=158.82; integer best (cost,A,B,capacity)=(162, 0, 9, 1530)
+
+======================================================================
+TASK 20: change N, standard deviation and capacity
+======================================================================
+N=100,000, std=120, capacity=1000: simulated=10.6160%, exact normal tail=10.5650%
+N=  1,000, std=120, capacity=1000: simulated=10.1000%, exact normal tail=10.5650%
+N=100,000, std=80, capacity=1000: simulated=3.1140%, exact normal tail=3.0396%
+N=100,000, std=120, capacity=1100: simulated=1.9120%, exact normal tail=1.8610%

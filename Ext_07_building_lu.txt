@@ -1,0 +1,6 @@
+calm           displacement (mm) = [0.3 0.5 0.6]  residual = 1.0e-14
+               inter-storey drift (mm) = [0.3 0.2 0.1]
+moderate wind  displacement (mm) = [1.2 2.2 2.8]  residual = 2.3e-14
+               inter-storey drift (mm) = [1.2 1.  0.6]
+storm          displacement (mm) = [2.8 5.2 6.8]  residual = 3.8e-14
+               inter-storey drift (mm) = [2.8 2.4 1.6]

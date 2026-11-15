@@ -1,0 +1,9 @@
+Naive running sum : 100000.0000013329
+math.fsum         : 100000.0000000000
+Absolute error    : 1.333e-06
+Relative error    : 1.333e-11
+naive == 100000.0 ? False
+np.isclose(naive, 100000.0, rtol=1e-9)? True
+x=1e-04: unstable=0.4999999970 stable=0.4999999996
+x=1e-06: unstable=0.5000444503 stable=0.5000000000
+x=1e-08: unstable=0.0000000000 stable=0.5000000000

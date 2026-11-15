@@ -1,0 +1,12 @@
+t=   0 s  v=  0.0 m/s  a= 1.55 m/s^2
+t=   2 s  v=  3.1 m/s  a= 1.50 m/s^2
+t=   4 s  v=  6.0 m/s  a= 1.43 m/s^2
+t=   6 s  v=  8.8 m/s  a= 1.27 m/s^2
+t=   8 s  v= 11.1 m/s  a= 1.02 m/s^2
+t=  10 s  v= 12.9 m/s  a= 0.73 m/s^2
+t=  12 s  v= 14.0 m/s  a= 0.42 m/s^2
+t=  14 s  v= 14.6 m/s  a= 0.23 m/s^2
+t=  16 s  v= 14.9 m/s  a= 0.10 m/s^2
+t=  18 s  v= 15.0 m/s  a= 0.02 m/s^2
+t=  20 s  v= 15.0 m/s  a= 0.00 m/s^2
+Peak acceleration: 1.55 m/s^2 at t = 0.0 s

@@ -1,0 +1,4 @@
+h=1.0: Euler P(12)=4999.67, exact=4991.89, error=7.79
+h=0.5: Euler P(12)=4996.65, exact=4991.89, error=4.77
+h=0.1: Euler P(12)=4992.90, exact=4991.89, error=1.02
+Month when population first exceeds 2500 (h=0.1): 4.1

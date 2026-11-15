@@ -1,0 +1,4 @@
+Mesh currents (A): [ 0.46038  0.09057 -0.02642]
+Residual norm: 2.7755575615628914e-17
+Current in the shared 20-ohm resistor (A): 0.36981
+Power in that resistor (W): 2.73521
