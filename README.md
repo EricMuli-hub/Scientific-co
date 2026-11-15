@@ -1,4 +1,4 @@
-# BIT 2118 Scientific Computing - Individual Submission
+# BIT 2118 Scientific Computing 
 
 Student: Eric Muli
 Registration number: BSCCS202457153
@@ -9,12 +9,11 @@ Discussions were done as a group; this repository and the documentation are my o
 ## Structure
 
 - `code/` - the original program for every task (Task_02 ... Task_20) and `parameter_changes.py`,
-  which changes at least one input per task and prints the new results (Instruction C).
+  which changes at least one input per task and prints the new results .
 - `extensions/` - one modified program per task that solves a different but related real-world
-  case (Instruction E). Assumptions are written at the top of every file.
+  case . Assumptions are written at the top of every file.
 - `outputs/` - text output captured from running every program.
-- `figures/` - graphs produced by the programs (black and white).
-- `docs/` - the Word documentation (assumptions, inputs, outputs, interpretation).
+- `figures/` - graphs produced by the programs .
 - `requirements.txt` - Python libraries needed.
 
 ## How to run
